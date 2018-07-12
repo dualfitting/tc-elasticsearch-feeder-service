@@ -48,6 +48,7 @@ jobs:
   deploy_test:
     <<: *python_env
     environment:
+      # TO_BE_CONFIRMED: "ENV must be one of - DEV, QA, PROD or LOCAL"
       DEPLOY_ENV: "TEST"
     steps: *deploy_steps
       
